@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Buttons Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.5s;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        #logo {
+            width: 100px;
+            height: 50px;
+        }
+        #links {
+            text-align: right;
+        }
+        #links a {
+            color: blue;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        #links a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        #mainImage {
+            width: 50%;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .right {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .description {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        #buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        button {
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #blueBtn {
+            background-color: blue;
+            color: white;
+        }
+        #yellowBtn {
+            background-color: yellow;
+            color: black;
+        }
+        #blackBtn {
+            background-color: black;
+            color: white;
+        }
+        #randomBtn {
+            background-color: gray;
+            color: white;
+        }
+        #resetBtn {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="download.jpeg" alt="Logo" id="logo">
+        <div id="links">
+            <h3>Useful Links</h3>
+            <a href="https://www.google.com">Google</a> |
+            <a href="https://www.github.com">GitHub</a> |
+        </div>
+    </header>
+    <div class="content">
+        <img src="img1.jpeg" alt="Sample Image" id="mainImage">
+        <div class="right">
+            <div class="description">
+                <p>This is a fun page where you can change the background color by clicking the buttons. The first three buttons set specific colors, and the random button generates a surprise color!</p>
+            </div>
+            <div id="buttons">
+                <button id="blueBtn">Blue</button>
+                <button id="yellowBtn">Yellow</button>
+                <button id="blackBtn">Black</button>
+                <button id="randomBtn">Random</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
